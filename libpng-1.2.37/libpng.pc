@@ -1,0 +1,11 @@
+prefix=/usr/local/minigui/cross/arm/cortex-m3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/libpng12
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.2.37
+Libs: -L${libdir} -lpng12
+Libs.private: -lz -lm -L/usr/local/minigui/cross/arm/cortex-m3/lib/libz.a
+Cflags: -I${includedir} 
